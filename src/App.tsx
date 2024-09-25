@@ -1,25 +1,32 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Layout from "./layouts/Layout";
 
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
-import Layout from './layouts/Layout'
-// import axios from 'axios'
+// import { useRef, useState } from 'react';
 
 function App() {
-
   return (
     <Router>
       <Routes>
-<Route path='/' element={<Layout>
-  <p>Home Page</p>
-</Layout>} />
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <h1>Home page </h1>
+            </Layout>
+          }
+        />
 
-
-<Route path='/search' element={<Layout>
-  <p>Search Page</p>
-</Layout>} />
-
+        <Route
+          path="/search"
+          element={
+            <Layout>
+              <p>Search Page</p>
+            </Layout>
+          }
+        />
       </Routes>
-    </Router>  
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
