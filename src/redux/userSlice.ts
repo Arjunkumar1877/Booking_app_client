@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-type UserType = {
+export type UserType = {
     _id?: string;
     email: string;
     password?: string;
-    firstName: string;
-    lastName: string;
+    firstName?: string;
+    lastName?: string;
     otp?: string;
 }
 
